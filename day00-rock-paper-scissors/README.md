@@ -12,13 +12,6 @@ This project was created while I was first learning Python and is kept in this r
 - Random computer choice
 - Winner determination
 
-## What I learned
-
-- How to divide a program into separate functions for different tasks.
-- How to use dictionaries to return multiple values from a function.
-- How to generate random choices using the `random` module.
-- How conditional statements can be used to implement game logic.
-
 ## Concepts Practiced
 
 - Functions
@@ -28,6 +21,13 @@ This project was created while I was first learning Python and is kept in this r
 - User input with `input()`
 - Random module (`random.choice()`)
 - Returning values from functions
+
+## What I learned
+
+- How to divide a program into separate functions for different tasks.
+- How to use dictionaries to return multiple values from a function.
+- How to generate random choices using the `random` module.
+- How conditional statements can be used to implement game logic.
 
 ## Future Improvements
 

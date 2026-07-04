@@ -20,5 +20,6 @@ Each folder contains:
 | 00  | Rock Paper Scissors       | ✅     |
 | 01  | Student Grade Manager     | ✅     |
 | 02  | Library Management System | ✅     |
+| 03  | Contact Book              | ✅     |
 
 More projects coming...
