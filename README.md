@@ -21,5 +21,6 @@ Each folder contains:
 | 01  | Student Grade Manager     | ✅     |
 | 02  | Library Management System | ✅     |
 | 03  | Contact Book              | ✅     |
+| 04  | Expense Tracker           | ✅     |
 
 More projects coming...
