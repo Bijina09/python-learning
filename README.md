@@ -22,5 +22,6 @@ Each folder contains:
 | 02  | Library Management System | ✅     |
 | 03  | Contact Book              | ✅     |
 | 04  | Expense Tracker           | ✅     |
+| 05  | Student Record Manager    | ✅     |
 
 More projects coming...
