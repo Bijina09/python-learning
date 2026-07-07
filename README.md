@@ -23,5 +23,6 @@ Each folder contains:
 | 03  | Contact Book              | ✅     |
 | 04  | Expense Tracker           | ✅     |
 | 05  | Student Record Manager    | ✅     |
+| 06  | Password Manager          | ✅     |
 
 More projects coming...
