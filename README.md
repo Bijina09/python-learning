@@ -24,5 +24,6 @@ Each folder contains:
 | 04  | Expense Tracker           | ✅     |
 | 05  | Student Record Manager    | ✅     |
 | 06  | Password Manager          | ✅     |
+| 07  | To-Do List Manager        | ✅     |
 
 More projects coming...
