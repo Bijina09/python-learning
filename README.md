@@ -15,15 +15,16 @@ Each folder contains:
 
 ## Progress
 
-| Day | Project                   | Status |
-| --- | ------------------------- | ------ |
-| 00  | Rock Paper Scissors       | ✅     |
-| 01  | Student Grade Manager     | ✅     |
-| 02  | Library Management System | ✅     |
-| 03  | Contact Book              | ✅     |
-| 04  | Expense Tracker           | ✅     |
-| 05  | Student Record Manager    | ✅     |
-| 06  | Password Manager          | ✅     |
-| 07  | To-Do List Manager        | ✅     |
+| Day | Project                               | Status |
+| --- | ------------------------------------- | ------ |
+| 00  | Rock Paper Scissors                   | ✅     |
+| 01  | Student Grade Manager                 | ✅     |
+| 02  | Library Management System             | ✅     |
+| 03  | Contact Book                          | ✅     |
+| 04  | Expense Tracker                       | ✅     |
+| 05  | Student Record Manager                | ✅     |
+| 06  | Password Manager                      | ✅     |
+| 07  | To-Do List Manager                    | ✅     |
+| 08  | Library Management System (Version 2) | ✅     |
 
 More projects coming...
