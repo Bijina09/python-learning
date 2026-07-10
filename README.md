@@ -26,5 +26,6 @@ Each folder contains:
 | 06  | Password Manager                      | ✅     |
 | 07  | To-Do List Manager                    | ✅     |
 | 08  | Library Management System (Version 2) | ✅     |
+| 09  | Inventory Management System           | ✅     |
 
 More projects coming...
