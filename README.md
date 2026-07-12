@@ -28,5 +28,6 @@ Each folder contains:
 | 08  | Library Management System (Version 2)        | ✅     |
 | 09  | Inventory Management System                  | ✅     |
 | 10  | Student Record Management System (Version 2) | ✅     |
+| 11  | Quiz Management System                       | ✅     |
 
 More projects coming...
