@@ -97,7 +97,7 @@ def delete_question():
     clear_screen()
 
     if not questions:
-        print("Questions Not Available.\n")
+        print("No Questions Available.\n")
         return
 
     question_to_delete = check_if_empty_input("Question")
@@ -110,15 +110,15 @@ def delete_question():
     
     print("Question Not Found.\n")
 
-def display_message(score,questions):
-    average = score / len(questions)
+def display_result_message(score,questions):
+    scored_percentage = (score / len(questions)) * 100
 
-    if score < average:
-        print("Keep Practicing!")
-    elif score == average:
+    if 80 <= scored_percentage <= 100:
+        print("Excellent!")
+    elif 50 <= scored_percentage < 80:
         print("Well Done! You can do more!!")
     else:
-        print("Excellent!")
+        print("Keep Practicing!")
 
 # Function for taking quiz
 def start_quiz():
@@ -126,12 +126,12 @@ def start_quiz():
     clear_screen()
 
     if not questions:
-        print("Questions Not Available. Please add questions to take quiz.\n")
+        print("No Questions Available. Please add questions to take quiz.\n")
         return
 
     total_score = 0
 
-    for i, current_question in enumerate(questions):
+    for i, current_question in enumerate(questions, start=1):
         display_question_details(current_question, i)
         entered_answer = check_if_empty_input("Answer")
 
@@ -142,11 +142,12 @@ def start_quiz():
             print("Incorrect")
             print(f"Correct Answer : {current_question['correct_answer']}\n\n")
         
+        input("Please press enter to go to the next question.")
         clear_screen()
         
     print("Quiz Finished!\n")
     print(f"Score : {total_score}/{len(questions)}")
-    display_message(total_score,questions)
+    display_result_message(total_score,questions)
 
 # Menu
 def show_menu():
