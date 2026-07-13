@@ -29,5 +29,6 @@ Each folder contains:
 | 09  | Inventory Management System                  | ✅     |
 | 10  | Student Record Management System (Version 2) | ✅     |
 | 11  | Quiz Management System                       | ✅     |
+| 12  | Personal Expense Tracker (Version 2)         | ✅     |
 
 More projects coming...
