@@ -30,5 +30,6 @@ Each folder contains:
 | 10  | Student Record Management System (Version 2) | ✅     |
 | 11  | Quiz Management System                       | ✅     |
 | 12  | Personal Expense Tracker (Version 2)         | ✅     |
+| 13  | Contact Book (Version 2)                     | ✅     |
 
 More projects coming...
