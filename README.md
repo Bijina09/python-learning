@@ -32,5 +32,6 @@ Each folder contains:
 | 12  | Personal Expense Tracker (Version 2)         | ✅     |
 | 13  | Contact Book (Version 2)                     | ✅     |
 | 14  | Bank Account Management System               | ✅     |
+| 15  | Student Record Management System (Version 3) | ✅     |
 
 More projects coming...
