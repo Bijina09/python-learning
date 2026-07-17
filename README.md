@@ -33,5 +33,6 @@ Each folder contains:
 | 13  | Contact Book (Version 2)                     | ✅     |
 | 14  | Bank Account Management System               | ✅     |
 | 15  | Student Record Management System (Version 3) | ✅     |
+| 16  | Employee Management System                   | ✅     |
 
 More projects coming...
