@@ -34,5 +34,6 @@ Each folder contains:
 | 14  | Bank Account Management System               | ✅     |
 | 15  | Student Record Management System (Version 3) | ✅     |
 | 16  | Employee Management System                   | ✅     |
+| 17  | Hospital Patient Management System           | ✅     |
 
 More projects coming...
