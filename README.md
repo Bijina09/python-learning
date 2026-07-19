@@ -35,5 +35,6 @@ Each folder contains:
 | 15  | Student Record Management System (Version 3) | ✅     |
 | 16  | Employee Management System                   | ✅     |
 | 17  | Hospital Patient Management System           | ✅     |
+| 18  | Library Management System (Version 3)        | ✅     |
 
 More projects coming...
