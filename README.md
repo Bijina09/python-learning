@@ -36,5 +36,6 @@ Each folder contains:
 | 16  | Employee Management System                   | ✅     |
 | 17  | Hospital Patient Management System           | ✅     |
 | 18  | Library Management System (Version 3)        | ✅     |
+| 19  | Pattern Printing                             | ✅     |
 
 More projects coming...
