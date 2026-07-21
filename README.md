@@ -37,5 +37,6 @@ Each folder contains:
 | 17  | Hospital Patient Management System           | ✅     |
 | 18  | Library Management System (Version 3)        | ✅     |
 | 19  | Pattern Printing                             | ✅     |
+| 20  | Sorting Algorithm                            | ✅     |
 
 More projects coming...
