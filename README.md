@@ -38,5 +38,6 @@ Each folder contains:
 | 18  | Library Management System (Version 3)        | ✅     |
 | 19  | Pattern Printing                             | ✅     |
 | 20  | Sorting Algorithm                            | ✅     |
+| 21  | Searching Algorithm                          | ✅     |
 
 More projects coming...
