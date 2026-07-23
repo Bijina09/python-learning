@@ -39,5 +39,6 @@ Each folder contains:
 | 19  | Pattern Printing                             | ✅     |
 | 20  | Sorting Algorithm                            | ✅     |
 | 21  | Searching Algorithm                          | ✅     |
+| 22  | Stack Implementation                         | ✅     |
 
 More projects coming...
