@@ -6,6 +6,14 @@ def clear_screen():
     # print("\033[H\033[J", end="")
     os.system("cls" if os.name == "nt" else "clear")
 
+def validate_input(prompt):
+    while True:
+        entered_value = input(prompt).strip()
+
+        if not entered_value:
+            print("Input cannot be empty.\n")
+        else:
+            return entered_value
 
 class Node:
 
@@ -22,92 +30,97 @@ class LinkedList:
 
         clear_screen()
 
-        data = input("Enter data: ").strip()
+        data = validate_input("Enter data : ")
         new_node = Node(data)
 
         if self.check_if_list_is_empty():
             self.head = new_node
         else:
-            current = self.head
-            while current.next is not None:
-                current = current.next
-            current.next = new_node
+            current_node = self.head
+            while current_node.next:
+                current_node = current_node.next
+            current_node.next = new_node
 
+        print(f"\n'{data}' added successfully.")
 
     def display_linked_list(self):
 
+        clear_screen()
+
         if self.check_if_list_is_empty():
+            print("List is empty.")
             return
 
         current_node = self.head
-
-        while current_node is not None:
-            if current_node.next is not None:
-                print(f"Data : {current_node.data} ->",end="")
-            else:
-                print(f"Data : {current_node.data} -> None",end="")
+        print("Head\n|\nV")
+        while current_node:
+            print(f"{current_node.data} -> ",end="")
             current_node = current_node.next
 
+        print("None\n")
 
     def search_node(self):
 
         clear_screen()
 
         if self.check_if_list_is_empty():
+            print("List is empty.")
             return
 
-        to_search = input("Enter the value to search: ").strip()
+        to_search = validate_input("Enter the value to search : ")
 
         current_node = self.head
 
-        while current_node is not None:
+        while current_node:
             if current_node.data == to_search:
-                print(f"Data {current_node.data}found successfully.\n")
+                print(f"Data '{current_node.data}' found successfully.\n")
                 return
             current_node = current_node.next
 
-        print("Data not found.\n")
+        print("\nData not found.\n")
 
     def delete_node(self):
 
         clear_screen()
 
         if self.check_if_list_is_empty():
+            print("List is empty.")
             return
 
-        to_delete = input("Enter the value to delete: ").strip()
+        to_delete = validate_input("Enter the data to delete : ")
 
         previous = None
         current_node = self.head
         
-        while current_node is not None: 
+        while current_node: 
             if current_node.data == to_delete:
                 if previous is None:
-                    self.head = None
+                    self.head = current_node.next
                 else:
-                    previous.next = current_node.next  
-            else:
-                previous = current_node
-                current_node = current_node.next
-                print(f"Data {current_node.data} deleted successfully.\n")
-                return
+                    previous.next = current_node.next
+                print(f"Data '{current_node.data}' deleted successfully.\n")
+                return 
+            previous = current_node
             current_node = current_node.next
+                
 
-        print(f"Data {to_delete} not found.\n")
+        print(f"\nData '{to_delete}' not found.\n")
+
     def count_total_nodes(self):
 
         clear_screen()
 
         if self.check_if_list_is_empty():
+            print("List is empty.")
             return
 
         count = 0
         current_node = self.head
-        while current_node is not None:
+        while current_node:
             count += 1
             current_node = current_node.next
 
-        print(f"Total count is {count}.\n")
+        print(f"\nTotal count is '{count}'.\n")
 
     # Helper function
     def check_if_list_is_empty(self):
@@ -132,7 +145,7 @@ class LinkedList:
             return
 
         self.head = None
-        print("List cleared successfully.\n")
+        print("\nList cleared successfully.\n")
 
 linked_list = LinkedList()
     
