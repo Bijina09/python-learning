@@ -41,5 +41,6 @@ Each folder contains:
 | 21  | Searching Algorithm                          | ✅     |
 | 22  | Stack Implementation                         | ✅     |
 | 23  | Queue Implementation                         | ✅     |
+| 24  | Singly Linked List                           | ✅     |
 
 More projects coming...
