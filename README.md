@@ -42,5 +42,6 @@ Each folder contains:
 | 22  | Stack Implementation                         | ✅     |
 | 23  | Queue Implementation                         | ✅     |
 | 24  | Singly Linked List                           | ✅     |
+| 25  | Doubly Linked List                           | ✅     |
 
 More projects coming...
