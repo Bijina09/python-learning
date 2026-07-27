@@ -15,33 +15,34 @@ Each folder contains:
 
 ## Progress
 
-| Day | Project                                      | Status |
-| --- | -------------------------------------------- | ------ |
-| 00  | Rock Paper Scissors                          | ✅     |
-| 01  | Student Grade Manager                        | ✅     |
-| 02  | Library Management System                    | ✅     |
-| 03  | Contact Book                                 | ✅     |
-| 04  | Expense Tracker                              | ✅     |
-| 05  | Student Record Manager                       | ✅     |
-| 06  | Password Manager                             | ✅     |
-| 07  | To-Do List Manager                           | ✅     |
-| 08  | Library Management System (Version 2)        | ✅     |
-| 09  | Inventory Management System                  | ✅     |
-| 10  | Student Record Management System (Version 2) | ✅     |
-| 11  | Quiz Management System                       | ✅     |
-| 12  | Personal Expense Tracker (Version 2)         | ✅     |
-| 13  | Contact Book (Version 2)                     | ✅     |
-| 14  | Bank Account Management System               | ✅     |
-| 15  | Student Record Management System (Version 3) | ✅     |
-| 16  | Employee Management System                   | ✅     |
-| 17  | Hospital Patient Management System           | ✅     |
-| 18  | Library Management System (Version 3)        | ✅     |
-| 19  | Pattern Printing                             | ✅     |
-| 20  | Sorting Algorithm                            | ✅     |
-| 21  | Searching Algorithm                          | ✅     |
-| 22  | Stack Implementation                         | ✅     |
-| 23  | Queue Implementation                         | ✅     |
-| 24  | Singly Linked List                           | ✅     |
-| 25  | Doubly Linked List                           | ✅     |
+| Day | Project                                      | Status      |
+| --- | -------------------------------------------- | ----------- |
+| 00  | Rock Paper Scissors                          | ✅          |
+| 01  | Student Grade Manager                        | ✅          |
+| 02  | Library Management System                    | ✅          |
+| 03  | Contact Book                                 | ✅          |
+| 04  | Expense Tracker                              | ✅          |
+| 05  | Student Record Manager                       | ✅          |
+| 06  | Password Manager                             | ✅          |
+| 07  | To-Do List Manager                           | ✅          |
+| 08  | Library Management System (Version 2)        | ✅          |
+| 09  | Inventory Management System                  | ✅          |
+| 10  | Student Record Management System (Version 2) | ✅          |
+| 11  | Quiz Management System                       | ✅          |
+| 12  | Personal Expense Tracker (Version 2)         | ✅          |
+| 13  | Contact Book (Version 2)                     | ✅          |
+| 14  | Bank Account Management System               | ✅          |
+| 15  | Student Record Management System (Version 3) | ✅          |
+| 16  | Employee Management System                   | ✅          |
+| 17  | Hospital Patient Management System           | ✅          |
+| 18  | Library Management System (Version 3)        | ✅          |
+| 19  | Pattern Printing                             | ✅          |
+| 20  | Sorting Algorithm                            | ✅          |
+| 21  | Searching Algorithm                          | ✅          |
+| 22  | Stack Implementation                         | ✅          |
+| 23  | Queue Implementation                         | ✅          |
+| 24  | Singly Linked List                           | ✅          |
+| 25  | Doubly Linked List                           | ✅          |
+| 26  | Binary Search Tree                           | In progress |
 
 More projects coming...
