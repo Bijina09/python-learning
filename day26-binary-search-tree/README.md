@@ -1,31 +1,34 @@
-# Day 26 - Binary Search Tree (Work in Progress)
+# Day 26-27 - Binary Search Tree
 
 ## Project
 
-A console-based Binary Search Tree (BST) implementation built using Object-Oriented Programming (OOP). This project aims to implement common BST operations while learning recursion and tree traversal techniques.
+A console-based Binary Search Tree (BST) implementation built using Object-Oriented Programming (OOP). The project implements common BST operations using recursion and explores how tree-based data structures work.
 
-## Current Features
+## Features
 
-- ✅ Insert Node (In Progress)
-- 🚧 Search Node
-- 🚧 Inorder Traversal
-- 🚧 Preorder Traversal
-- 🚧 Postorder Traversal
-- 🚧 Find Minimum
-- 🚧 Find Maximum
-- 🚧 Count Total Nodes
+- Insert Node ✅
+- Search Node ✅
+- Inorder Traversal ✅
+- Preorder Traversal ✅
+- Postorder Traversal ✅
+- Find Minimum 🚧
+- Find Maximum 🚧
+- Count Total Nodes 🚧
 
 ## Concepts Practiced
 
 - Object-Oriented Programming (OOP)
 - Classes and Objects
 - Recursion
-- Binary Search Tree (BST)
-- Tree Nodes
+- Binary Search Tree
+- Tree Traversal
+- Searching Algorithms
 - Problem Solving
 
 ## Learning Outcome
 
-Currently learning how Binary Search Trees work, how nodes are inserted recursively, and how tree traversal differs from linear data structures.
+Learned how Binary Search Trees store data, how recursive insertion and searching work, and how traversal algorithms visit nodes in different orders.
 
-> **Status:** Work in Progress. The project will be completed in the next session.
+## Status
+
+Work in Progress. Remaining BST operations will be completed in the next session.

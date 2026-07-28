@@ -65,7 +65,7 @@ class Tree:
 
         clear_screen()
 
-        if not tree:
+        if not tree.root:
             print("Tree is empty.\n")
             return
 
@@ -76,88 +76,90 @@ class Tree:
         search_result = self.search_each_node(current_node,to_search)
 
         if search_result:
-            print(f"Value '{current_node.value}' found in the tree.\n")
+            print(f"Value '{to_search}' found in the tree.\n")
             return
         else:
-            print(f"Value '{current_node.value}' not found in the tree.\n")
+            print(f"Value '{to_search}' not found in the tree.\n")
             return
 
     def search_each_node(self,current_node,to_search):     
-        if current_node.value == to_search:
-            return True
-        elif current_node.value > to_search:
-            if current_node.right:
-                return self.search_each_node(current_node.right,to_search)
+        if current_node:
+            if current_node.value == to_search:
+                return True
+            elif to_search > current_node.value:
+                if current_node.right:
+                    return self.search_each_node(current_node.right,to_search)
+                else:
+                    return False
             else:
-                return False
+                if current_node.left:
+                    return self.search_each_node(current_node.left,to_search)
+                else:
+                    return False
         else:
-            if current_node.right:
-                return self.search_each_node(current_node.left,to_search)
-            else:
-                return False
+            return False
 
     def inorder_traversal(self):
 
         clear_screen()
 
-        if self.check_if_list_is_empty():
-            print("List is empty.")
+        if not tree.root:
+            print("Tree is empty.\n")
             return
 
-        current_node = self.head
-        print("Head\n|\nV")
-        print("None -> ",end="")
-        while current_node:
-            if not current_node.next:
-                print(f"{current_node.data} -> ",end="")
-                break
-            print(f"{current_node.data} <-> ",end="")
-            current_node = current_node.next
+        current_node = tree.root
 
-        print("None\n")
+        self.each_inorder(current_node)
 
+    def each_inorder(self, current_node):
+        if not current_node:
+            return
+
+        self.each_inorder(current_node.left)
+        print(f"{current_node.value} -> ",end="")
+        self.each_inorder(current_node.right)
+
+    
     def preorder_traversal(self):
     
-            clear_screen()
-    
-            if self.check_if_list_is_empty():
-                print("List is empty.")
-                return
-    
-            current_node = self.head
-            while current_node.next:
-                current_node = current_node.next
-
-            print("Tail\n|\nV")
-            print("None <- ",end="")
-            while current_node:
-                if not current_node.prev:
-                    print(f"{current_node.data} -> ",end="")
-                    break
-                print(f"{current_node.data} <-> ",end="")
-                current_node = current_node.prev
-    
-            print("None\n")
+        clear_screen()
+            
+        if not tree.root:
+            print("Tree is empty.\n")
+            return
+            
+        current_node = tree.root
+            
+        self.each_preorder(current_node)
+            
+    def each_preorder(self, current_node):
+        if not current_node:
+            return
+            
+        print(f"{current_node.value} -> ",end="")
+        self.each_preorder(current_node.left)
+        self.each_preorder(current_node.right)
+        
 
     def postorder_traversal(self):
 
         clear_screen()
-
-        if self.check_if_list_is_empty():
-            print("List is empty.")
+                    
+        if not tree.root:
+            print("Tree is empty.\n")
             return
-
-        to_search = validate_input("Enter the value to search : ")
-
-        current_node = self.head
-
-        while current_node:
-            if current_node.data == to_search:
-                print(f"\nData '{current_node.data}' found successfully.\n")
-                return
-            current_node = current_node.next
-
-        print("\nData not found.\n")
+            
+        current_node = tree.root
+                    
+        self.each_postorder(current_node)
+                    
+    def each_postorder(self, current_node):
+        if not current_node:
+            return
+                    
+        self.each_postorder(current_node.left)
+        self.each_postorder(current_node.right)
+        print(f"{current_node.value } -> ",end="")
 
     def find_minimum(self):
 
