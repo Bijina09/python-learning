@@ -31,7 +31,7 @@ class Tree:
 
         clear_screen()
 
-        entered_value = validate_input("Enter value : ")
+        entered_value = int(validate_input("Enter value : "))
         new_node = Node(entered_value)
 
         if self.check_if_empty_tree():
@@ -65,11 +65,11 @@ class Tree:
 
         clear_screen()
 
-        if not tree.root:
+        if not self.root:
             print("Tree is empty.\n")
             return
 
-        to_search = validate_input("Enter value : ")
+        to_search = int(validate_input("Enter value : "))
 
         current_node = self.root
 
@@ -103,11 +103,11 @@ class Tree:
 
         clear_screen()
 
-        if not tree.root:
+        if not self.root:
             print("Tree is empty.\n")
             return
 
-        current_node = tree.root
+        current_node = self.root
 
         self.each_inorder(current_node)
 
@@ -124,11 +124,11 @@ class Tree:
     
         clear_screen()
             
-        if not tree.root:
+        if not self.root:
             print("Tree is empty.\n")
             return
             
-        current_node = tree.root
+        current_node = self.root
             
         self.each_preorder(current_node)
             
@@ -145,11 +145,11 @@ class Tree:
 
         clear_screen()
                     
-        if not tree.root:
+        if not self.root:
             print("Tree is empty.\n")
             return
             
-        current_node = tree.root
+        current_node = self.root
                     
         self.each_postorder(current_node)
                     
@@ -165,48 +165,43 @@ class Tree:
 
         clear_screen()
 
-        if self.check_if_list_is_empty():
-            print("List is empty.")
+        if not self.root:
+            print("Tree is empty.\n")
             return
+                    
+        current_node = self.root
 
-        to_delete = validate_input("Enter the data to delete : ")
+        minimum = self.get_minimum_node(current_node)
 
-        previous = None
-        current_node = self.head
-        
-        while current_node: 
-            if current_node.data == to_delete:
-                if previous is None:
-                    self.head = current_node.next
-                    if current_node.next:
-                        current_node.next.prev = None
-                else:
-                    previous.next = current_node.next
-                    if current_node.next:
-                        current_node.next.prev = current_node.prev
-                print(f"\nData '{current_node.data}' deleted successfully.\n")
-                return 
-            previous = current_node
-            current_node = current_node.next
-                
+        print(f"The minimum value is {minimum.value}")
 
-        print(f"\nData '{to_delete}' not found.\n")
+    def get_minimum_node(self, current_node):
+
+        if current_node.left:
+            return self.get_minimum_node(current_node.left)
+        else:
+            return current_node
 
     def find_maximum(self):
-
+    
         clear_screen()
-
-        if self.check_if_list_is_empty():
-            print("List is empty.")
+    
+        if not self.root:
+            print("Tree is empty.\n")
             return
-
-        count = 0
-        current_node = self.head
-        while current_node:
-            count += 1
-            current_node = current_node.next
-
-        print(f"\nTotal count is {count}.\n")
+                        
+        current_node = self.root
+    
+        maximum = self.get_maximum_node(current_node)
+    
+        print(f"The maximum value is {maximum.value}")
+    
+    def get_maximum_node(self, current_node):
+    
+        if current_node.right:
+            return self.get_maximum_node(current_node.right)
+        else:
+            return current_node
 
     # Helper function
     def check_if_empty_tree(self):
@@ -216,12 +211,28 @@ class Tree:
     def count_total_nodes(self):
 
         clear_screen()
+            
+        if not self.root:
+            print("Tree is empty.\n")
+            return
 
-        if self.check_if_list_is_empty():
-            print("List is empty.")
-        else:
-            print("List is not empty.")
 
+        current_node = self.root
+
+        total_count = self.count_each_node(current_node)
+
+        print(f"Total count : {total_count}\n")
+
+
+
+    def count_each_node(self, current_node):
+            if not current_node:
+                return 0
+            else:
+                left_count = self.count_each_node(current_node.left)
+                right_count = self.count_each_node(current_node.right)
+
+                return (1 + left_count + right_count)
 tree = Tree()
 
 def show_menu():
