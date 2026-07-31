@@ -44,5 +44,6 @@ Each folder contains:
 | 25    | Doubly Linked List                           | ✅     |
 | 26-28 | Binary Search Tree                           | ✅     |
 | 29    | File-Based Student Database System           | ✅     |
+| 30    | Banking System with JSON Storage             | ✅     |
 
 More projects coming...
